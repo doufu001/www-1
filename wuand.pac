@@ -1,4 +1,4 @@
-// update: 2019.1.12
+// update: 2019.3.22
 // 鉴于《刑法》、《网络安全法》等法律的有关条款，规则中加入了黑名单，请谅解
 function regExpMatch(url, pattern) {    try { return new RegExp(pattern).test(url); } catch(ex) { return false; }    }
 function FindProxyForURL(url, host) {
@@ -59,6 +59,7 @@ if (
   dnsDomainIs(host, "tineye.com") ||
   dnsDomainIs(host, "depositphotos.com") ||
   dnsDomainIs(host, "istockphoto.com") ||
+  dnsDomainIs(host, "artstation.com") ||
 // acg
   dnsDomainIs(host, "nicovideo.jp") ||
   dnsDomainIs(host, "smilevideo.jp") ||
